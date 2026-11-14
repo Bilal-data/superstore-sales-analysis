@@ -1,2 +1,79 @@
-# superstore-sales-analysis
-Sales analysis of a store chain (2015-2018): categories, regions and yearly trends
+# Superstore Sales Analysis
+
+Sales analysis of a store chain (2015-2018): which categories, regions and years drive revenue.
+
+## Question
+
+Where do the store chain's sales come from, and how did they change over four years?
+
+## Notebook
+
+[superstore_sales_analysis.ipynb](https://github.com/Bilal-data/superstore-sales-analysis/blob/main/superstore_sales_analysis.ipynb), with outputs and a Findings cell at the end. The notebook reads the data from Google Drive; the data file is not in this repo.
+
+## Data
+
+Superstore Sales Dataset (Kaggle, uploaded by Rohit Sahoo), file `train.csv`: 9,800 rows and 18 columns, orders from 3 Jan 2015 to 30 Dec 2018. Each row is one product line inside an order, not one order. License: GPL 2, so I do not redistribute the file. It has revenue (Sales) only: no profit, discount or quantity columns.
+
+## Key findings
+
+- Yearly sales: 479,856 (2015), 459,436 (2016), 600,193 (2017), 722,052 (2018). A 4% dip in 2016, then +31% and +20%.
+- Technology leads with 36.6% of sales, then Furniture (32.2%) and Office Supplies (31.2%). Technology led in 3 of 4 years; Furniture was slightly ahead in 2016.
+- Office Supplies has the most line items (5,909) but the lowest median item (27). Technology's mean (456) is pulled up by a few huge sales: the top 5 rows are about 9.2% of its sales.
+- West (31.4%) and East (29.6%) make up about 61% of sales. South is last (17.2%) because it has the fewest line items (1,598), not cheaper ones.
+- Growth 2015 to 2018: Office Supplies +61%, Technology +55%, Furniture +36%.
+
+## Limitations
+
+- Revenue only, no profit: a high-sales category may not be the most profitable one.
+- Descriptive analysis only, with no statistical tests.
+- I cannot say why regions or categories differ: there is no customer, store or quantity data.
+
+## What I learned
+
+- Parse dd/mm/yyyy dates with `dayfirst=True` and check the date range.
+- A row can be a product line, not an order: row counts are not order counts.
+- Mean vs median under skew, and always show the count next to it.
+- Absolute growth and percentage growth can give different winners.
+- `groupby`, `agg`, `pivot_table`, `nlargest` and a grouped bar chart.
+- Reading a chart by eye is approximate: confirm with a table.
+
+## Tools
+
+Python, pandas, seaborn, matplotlib, Google Colab
+
+---
+
+## العربية
+
+تحليل مبيعات سلسلة متاجر (2015-2018): أنهي فئات ومناطق وسنين بتجيب الإيراد.
+
+### السؤال
+
+المبيعات جاية منين، واتغيّرت إزاي على 4 سنين؟
+
+### الداتا
+
+Superstore Sales Dataset من Kaggle (رفعها Rohit Sahoo)، ملف `train.csv`: 9,800 صف و18 عمود، طلبات من 3 يناير 2015 لحد 30 ديسمبر 2018. كل صف هو منتج واحد جوه طلب، مش طلب كامل. الترخيص GPL 2، فمش بنشر الملف هنا. فيها الإيراد (Sales) بس: مفيش عمود ربح ولا خصم ولا كمية.
+
+### أهم النتايج
+
+- مبيعات السنين: 479,856 ثم 459,436 ثم 600,193 ثم 722,052. نزلت 4% في 2016 وبعدها زادت 31% و20%.
+- Technology الأولى بحوالي 36.6% من المبيعات، وبعدها Furniture (32.2%) وOffice Supplies (31.2%). Technology تفوقت في 3 سنين من 4، وFurniture كانت أعلى شوية في 2016.
+- Office Supplies أكتر بنود (5,909) بس وسيط البند فيها 27 بس. متوسط Technology (456) بتشده شوية مبيعات ضخمة: أعلى 5 صفوف حوالي 9.2% من مبيعاتها.
+- West وEast مع بعض حوالي 61% من المبيعات. South الأخيرة (17.2%) لأن بنودها أقل (1,598)، مش لأن أسعارها أرخص.
+- النمو من 2015 لـ 2018: Office Supplies +61%، وTechnology +55%، وFurniture +36%.
+
+### الحدود
+
+- إيراد بس من غير ربح: الفئة الأعلى مبيعات مش لازم تكون الأعلى ربحًا.
+- تحليل وصفي بس من غير اختبارات إحصائية.
+- مش عارف ليه المناطق أو الفئات بتختلف: مفيش بيانات عن العملاء أو الفروع أو الكميات.
+
+### اللي اتعلمته
+
+- تحويل التواريخ dd/mm/yyyy بـ `dayfirst=True` ومراجعة المدى.
+- الصف ممكن يكون بند مش طلب: عدد الصفوف مش عدد الطلبات.
+- المتوسط والوسيط لما القيم مش متماثلة، وعرض العدد جنبهم.
+- الزيادة بالرقم والزيادة بالنسبة ممكن يدّوا فايز مختلف.
+- `groupby` و`agg` و`pivot_table` و`nlargest` ورسم أعمدة مجمّعة.
+- قراءة الرسم بالعين تقريبية: لازم نتأكد من جدول.
