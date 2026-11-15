@@ -14,6 +14,8 @@ Where do the store chain's sales come from, and how did they change over four ye
 
 Superstore Sales Dataset (Kaggle, uploaded by Rohit Sahoo), file `train.csv`: 9,800 rows and 18 columns, orders from 3 Jan 2015 to 30 Dec 2018. Each row is one product line inside an order, not one order. License: GPL 2, so I do not redistribute the file. It has revenue (Sales) only: no profit, discount or quantity columns.
 
+https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
+
 ## Key findings
 
 - Yearly sales: 479,856 (2015), 459,436 (2016), 600,193 (2017), 722,052 (2018). A 4% dip in 2016, then +31% and +20%.
