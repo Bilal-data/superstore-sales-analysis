@@ -23,6 +23,7 @@ https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
 - Office Supplies has the most line items (5,909) but the lowest median item (27). Technology's mean (456) is pulled up by a few huge sales: the top 5 rows are about 9.2% of its sales.
 - West (31.4%) and East (29.6%) make up about 61% of sales. South is last (17.2%) because it has the fewest line items (1,598), not cheaper ones.
 - Growth 2015 to 2018: Office Supplies +61%, Technology +55%, Furniture +36%.
+- 793 customers placed 4,922 orders. The top 20% of customers bring 48.3% of sales: concentrated, but far from the 80/20 rule.
 
 ## Limitations
 
