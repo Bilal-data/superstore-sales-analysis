@@ -25,6 +25,7 @@ https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
 - Growth 2015 to 2018: Office Supplies +61%, Technology +55%, Furniture +36%.
 - 793 customers placed 4,922 orders. The top 20% of customers bring 48.3% of sales: concentrated, but far from the 80/20 rule.
 - Sales peak late in the year: November, December and September together are about 43% of sales, and February is the lowest. The peak repeats every year, but the exact month changes (Sep 2015, Nov 2016, Dec 2017, Nov 2018). I can see the pattern but not its cause.
+- Consumer brings 50.8% of sales, Corporate 30.4% and Home Office 18.8%. The ranking follows the number of line items, not the price: the median item is almost the same in the three segments (53 to 56).
 
 ## Limitations
 
