@@ -24,6 +24,7 @@ https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
 - West (31.4%) and East (29.6%) make up about 61% of sales. South is last (17.2%) because it has the fewest line items (1,598), not cheaper ones.
 - Growth 2015 to 2018: Office Supplies +61%, Technology +55%, Furniture +36%.
 - 793 customers placed 4,922 orders. The top 20% of customers bring 48.3% of sales: concentrated, but far from the 80/20 rule.
+- Sales peak late in the year: November, December and September together are about 43% of sales, and February is the lowest. The peak repeats every year, but the exact month changes (Sep 2015, Nov 2016, Dec 2017, Nov 2018). I can see the pattern but not its cause.
 
 ## Limitations
 
