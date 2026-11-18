@@ -26,6 +26,7 @@ https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
 - 793 customers placed 4,922 orders. The top 20% of customers bring 48.3% of sales: concentrated, but far from the 80/20 rule.
 - Sales peak late in the year: November, December and September together are about 43% of sales, and February is the lowest. The peak repeats every year, but the exact month changes (Sep 2015, Nov 2016, Dec 2017, Nov 2018). I can see the pattern but not its cause.
 - Consumer brings 50.8% of sales, Corporate 30.4% and Home Office 18.8%. The ranking follows the number of line items, not the price: the median item is almost the same in the three segments (53 to 56). Consumer is the biggest because it has the most customers (409 of 793): a customer buys about the same in every segment.
+- The segment mix is almost the same in all four regions (Consumer is 50% to 52% of each region's sales), so segments do not explain why the regions differ.
 
 ## Limitations
 
