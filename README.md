@@ -27,7 +27,7 @@ https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
 - Sales peak late in the year: November, December and September together are about 43% of sales, and February is the lowest. The peak repeats every year, but the exact month changes (Sep 2015, Nov 2016, Dec 2017, Nov 2018). I can see the pattern but not its cause.
 - Consumer brings 50.8% of sales, Corporate 30.4% and Home Office 18.8%. The ranking follows the number of line items, not the price: the median item is almost the same in the three segments (53 to 56). Consumer is the biggest because it has the most customers (409 of 793): a customer buys about the same in every segment.
 - The segment mix is almost the same in all four regions (Consumer is 50% to 52% of each region's sales), so segments do not explain why the regions differ.
-- Home Office leans toward Technology (42.9% of its sales, against 34.9% and 35.4% in the other two segments). It is the smallest segment, so a few large sales could drive this; I did not check that.
+- Home Office leans toward Technology (42.9% of its sales, against 34.9% and 35.4% in the other two segments). Without the 5 largest Technology sales in each segment the gap is about half as big (35.8% against 32.0% and 31.0%): part of the lean came from a few large sales, and part remains. I ran no statistical test.
 
 ## Limitations
 
